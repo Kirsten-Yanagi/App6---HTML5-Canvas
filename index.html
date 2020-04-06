@@ -40,7 +40,7 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function draw_b() {
-  var b_canvas = document.getElementById("b"); // Finds the canvas on the page and that is where the action will take place
+  var b_canvas = document.getElementById("myCanvas"); // Finds the canvas on the page and that is where the action will take place
   var b_context = b_canvas.getContext("2d"); // This is the MOST IMPORTANT part, this tells us that we are drawing a 2D object, in this case it ia a rectangle.
   b_context.fillRect(50, 25, 50, 25); // The b is a rectangle that is filled and these dimensions
 }
