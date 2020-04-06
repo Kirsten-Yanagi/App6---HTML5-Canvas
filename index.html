@@ -104,19 +104,11 @@ function DrawImage() {
 	<!-- This draws the rectangle onto the canvas onto the page.
 	The onclick goes back to the function draw_b() which is in the script and will draw
 	the rectangle into the canvas whenever the button is clicked that says rectangle.--> 
-	<a class="w3-btn w3-black";"> Name</a>
-	<!-- This draws my name in the canvas onto the page, which is Kirsten--> 
-	<p>Image to use:</p>
+	<a class="w3-btn w3-black" onclick=";"> Draw Name</a>
+	<!-- This draws my name inside the canvas onto the page, which is Kirsten.-->
 	<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
 
-	<p>Canvas to fill:</p>
-	<canvas id="myCanvas" width="250" height="300"
-	style="border:1px solid #d3d3d3;">
-	Your browser does not support the HTML5 canvas tag.</canvas>
-
-	<p><button onclick="DrawImage()">Try it</button></p>
-
-	<a class="w3-btn w3-black" onclick="results();"> Image</a>
+	<a class="w3-btn w3-black" onclick="DrawImage();"> Image</a>
 	<!-- This inserts a picture onto the canvas onto the page, --> 
 	<a class="w3-btn w3-black" onclick="results();"> Clear</a>
 	<!-- This deletes the entire canvas page--> 
