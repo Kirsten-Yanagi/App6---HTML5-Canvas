@@ -48,7 +48,7 @@ function draw_b() {
 function DrawImage() {
   var c = document.getElementById("myCanvas");// Finds the canvas on the page and that is where the action will take place
   var ctx = c.getContext("2d");//this is the MOST IMPORTANT part, this tells us that we are drawing a 2D object, in this case it is an image.
-  var img = document.getElementById("scream"); // the image id 
+  var img = document.getElementById("dog"); // the image id 
   ctx.drawImage(img,10,10);
 }
 </script>
@@ -106,7 +106,7 @@ function DrawImage() {
 	the rectangle into the canvas whenever the button is clicked that says rectangle.--> 
 	<a class="w3-btn w3-black" onclick=";"> Draw Name</a>
 	<!-- This draws my name inside the canvas onto the page, which is Kirsten.-->
-	<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+	<img id="dog" src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Pomeranian_02.jpg"  width="680" height="280">
 
 	<a class="w3-btn w3-black" onclick="DrawImage();"> Image</a>
 	<!-- This inserts a picture onto the canvas onto the page, --> 
