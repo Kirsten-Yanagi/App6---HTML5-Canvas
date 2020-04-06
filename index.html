@@ -38,6 +38,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+function draw_b() {
+  var b_canvas = document.getElementById("b"); // Finds the canvas on the page and that is where the action will take place
+  var b_context = b_canvas.getContext("2d"); // This is the MOST IMPORTANT part, this tells us that we are drawing a 2D object, in this case it ia a rectangle.
+  b_context.fillRect(50, 25, 150, 100); // The b is a rectangle that is filled and these dimensions
+}
+	
 </script>
 
 
@@ -77,7 +84,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 </div>
 	
-	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+	<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
 	Your browser does not support the HTML5 canvas tag.<!-- This draws the canvas onto the page, which is a black box--> 
 	</canvas>
 	<!-- This draws the canvas onto the page, which is a black box--> 
