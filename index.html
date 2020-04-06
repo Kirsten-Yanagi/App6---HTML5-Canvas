@@ -88,8 +88,10 @@ function draw_b() {
 	Your browser does not support the HTML5 canvas tag.<!-- This draws the canvas onto the page, which is a black box--> 
 	</canvas>
 	<!-- This draws the canvas onto the page, which is a black box--> 
-	<a class="w3-btn w3-black" onclick="results();"> Draw Rectangle</a>
-	<!-- This draws the rectangle onto the canvas onto the page--> 
+	<a onclick="draw_b();" class="w3-btn w3-black" onclick="results();"> Draw Rectangle</a>
+	<!-- This draws the rectangle onto the canvas onto the page.
+	The onclick goes back to the function draw_b() which is in the script and will draw
+	the rectangle into the canvas whenever the button is clicked that says rectangle.--> 
 	<a class="w3-btn w3-black" onclick="results();"> Name</a>
 	<!-- This draws my name in the canvas onto the page, which is Kirsten--> 
 	<a class="w3-btn w3-black" onclick="results();"> Image</a>
